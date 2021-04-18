@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 dotenv.config();
-
-mongoose.connect(`mongodb+srv://venkatesh:${process.env.PWD}@mycluster.fyzgz.mongodb.net/maya-data?retryWrites=true&w=majority`, 
+// mongodb+srv://venkatesh:${process.env.PWD}@mycluster.fyzgz.mongodb.net/maya-data?retryWrites=true&w=majority
+mongoose.connect(`${process.env.DB_URI}`, 
 { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true, useFindAndModify: false}
 );
 
