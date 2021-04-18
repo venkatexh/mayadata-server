@@ -6,7 +6,7 @@ const errorHandler = require('./handlers/error');
 const app = express();
 
 var corsOptions = {
-	origin: ['http://localhost:3000', 'https://goalkeep.netlify.app'],
+	origin: ['http://localhost:3000', 'https://md-app-client.netlify.app'],
     methods: ['GET', 'POST', 'OPTIONS', 'PUT', 'DELETE']
 }
 app.use(cors(corsOptions));
